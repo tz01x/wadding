@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.invitation {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.invitation h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.names {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.details {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.families p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+  </style>
+
+  
+</head>
+<body>
+    <div class="invitation">
+        <h1>Wedding Invitation</h1>
+        <p class="names">Abdur Rahman Tumzied & Jui Akther</p>
+        <p class="details">We are pleased to invite you to the wedding ceremony of:</p>
+        <div class="families">
+            <p>Groom: <strong>Abdur Rahman Tumzied</strong></p>
+            <p>Father: Md Zahidul Haque Vuyan</p>
+            <p>Bride: <strong>Jui Akther</strong></p>
+            <p>Father: Md Hanif</p>
+        </div>
+        <button onclick="showMessage()">Click here for a special message</button>
+        <p id="message"></p>
+    </div>
+    <script>
+      function showMessage() {
+    const message = document.getElementById('message');
+    message.textContent = "We are excited to celebrate this special day with you!";
+}
+    </script>
+</body>
+</html>
