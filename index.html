@@ -1,61 +1,659 @@
-<header>
-    <div class="logo">
-      <span class="tumzied">T</span>
-      <span class="ampersand">&</span>
-      <span class="jui">J</span>
-      <date>13.07.2024</date>
-    </div>
-  </header>
-  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="description"
+    content="With the divine grace of the almighty, inviting you and your family to Tumzied's wedding to be held on 13th July 2024">
+
+  <title>Wedding Invitation | July 13 | Tumzied & Jui</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+    rel="stylesheet">
+
+
   <style>
-  
-  @import "compass/css3";
-  
-  header {
-    width: 37.5em;
-    margin: 2em auto;
-  }
-   
-  .logo {
-    background: url('https://s.cdpn.io/7635/averyson-logo.gif') no-repeat;
-    background-size: 100%;
-    float:left;
-    width:100%;
-    height: 30em;
-    font-family: Baskerville;
-    color: #575557;
-    position: relative;
-  }
-  
-  .tumzied, .jui, .ampersand {
+    /* ********************************* */
+
+
+    @-webkit-keyframes fall {
+      0% {
+        opacity: 0.9;
+        top: 0
+      }
+
+      100% {
+        opacity: 0.2;
+        top: 100%
+      }
+    }
+
+    @keyframes fall {
+      0% {
+        opacity: 0.9;
+        top: 0
+      }
+
+      100% {
+        opacity: 0.2;
+        top: 100%
+      }
+    }
+
+    @-webkit-keyframes blow-soft-left {
+      0% {
+        margin-left: 0
+      }
+
+      100% {
+        margin-left: -50%
+      }
+    }
+
+    @keyframes blow-soft-left {
+      0% {
+        margin-left: 0
+      }
+
+      100% {
+        margin-left: -50%
+      }
+    }
+
+    @-webkit-keyframes blow-medium-left {
+      0% {
+        margin-left: 0
+      }
+
+      100% {
+        margin-left: -100%
+      }
+    }
+
+    @keyframes blow-medium-left {
+      0% {
+        margin-left: 0
+      }
+
+      100% {
+        margin-left: -100%
+      }
+    }
+
+    @-webkit-keyframes blow-soft-right {
+      0% {
+        margin-left: 0
+      }
+
+      100% {
+        margin-left: 50%
+      }
+    }
+
+    @keyframes blow-soft-right {
+      0% {
+        margin-left: 0
+      }
+
+      100% {
+        margin-left: 50%
+      }
+    }
+
+    @-webkit-keyframes blow-medium-right {
+      0% {
+        margin-left: 0
+      }
+
+      100% {
+        margin-left: 100%
+      }
+    }
+
+    @keyframes blow-medium-right {
+      0% {
+        margin-left: 0
+      }
+
+      100% {
+        margin-left: 100%
+      }
+    }
+
+    @-webkit-keyframes sway-0 {
+      0% {
+        -webkit-transform: rotate(-5deg)
+      }
+
+      40% {
+        -webkit-transform: rotate(28deg)
+      }
+
+      100% {
+        -webkit-transform: rotate(3deg)
+      }
+    }
+
+    @keyframes sway-0 {
+      0% {
+        -ms-transform: rotate(-5deg);
+        transform: rotate(-5deg)
+      }
+
+      40% {
+        -ms-transform: rotate(28deg);
+        transform: rotate(28deg)
+      }
+
+      100% {
+        -ms-transform: rotate(3deg);
+        transform: rotate(3deg)
+      }
+    }
+
+    @-webkit-keyframes sway-1 {
+      0% {
+        -webkit-transform: rotate(10deg)
+      }
+
+      40% {
+        -webkit-transform: rotate(43deg)
+      }
+
+      100% {
+        -webkit-transform: rotate(15deg)
+      }
+    }
+
+    @keyframes sway-1 {
+      0% {
+        -ms-transform: rotate(10deg);
+        transform: rotate(10deg)
+      }
+
+      40% {
+        -ms-transform: rotate(43deg);
+        transform: rotate(43deg)
+      }
+
+      100% {
+        -ms-transform: rotate(15deg);
+        transform: rotate(15deg)
+      }
+    }
+
+    @-webkit-keyframes sway-2 {
+      0% {
+        -webkit-transform: rotate(15deg)
+      }
+
+      40% {
+        -webkit-transform: rotate(56deg)
+      }
+
+      100% {
+        -webkit-transform: rotate(22deg)
+      }
+    }
+
+    @keyframes sway-2 {
+      0% {
+        -ms-transform: rotate(15deg);
+        transform: rotate(15deg)
+      }
+
+      40% {
+        -ms-transform: rotate(56deg);
+        transform: rotate(56deg)
+      }
+
+      100% {
+        -ms-transform: rotate(22deg);
+        transform: rotate(22deg)
+      }
+    }
+
+    @-webkit-keyframes sway-3 {
+      0% {
+        -webkit-transform: rotate(25deg)
+      }
+
+      40% {
+        -webkit-transform: rotate(74deg)
+      }
+
+      100% {
+        -webkit-transform: rotate(37deg)
+      }
+    }
+
+    @keyframes sway-3 {
+      0% {
+        -ms-transform: rotate(25deg);
+        transform: rotate(25deg)
+      }
+
+      40% {
+        -ms-transform: rotate(74deg);
+        transform: rotate(74deg)
+      }
+
+      100% {
+        -ms-transform: rotate(37deg);
+        transform: rotate(37deg)
+      }
+    }
+
+    @-webkit-keyframes sway-4 {
+      0% {
+        -webkit-transform: rotate(40deg)
+      }
+
+      40% {
+        -webkit-transform: rotate(68deg)
+      }
+
+      100% {
+        -webkit-transform: rotate(25deg)
+      }
+    }
+
+    @keyframes sway-4 {
+      0% {
+        -ms-transform: rotate(40deg);
+        transform: rotate(40deg)
+      }
+
+      40% {
+        -ms-transform: rotate(68deg);
+        transform: rotate(68deg)
+      }
+
+      100% {
+        -ms-transform: rotate(25deg);
+        transform: rotate(25deg)
+      }
+    }
+
+    @-webkit-keyframes sway-5 {
+      0% {
+        -webkit-transform: rotate(50deg)
+      }
+
+      40% {
+        -webkit-transform: rotate(78deg)
+      }
+
+      100% {
+        -webkit-transform: rotate(40deg)
+      }
+    }
+
+    @keyframes sway-5 {
+      0% {
+        -ms-transform: rotate(50deg);
+        transform: rotate(50deg)
+      }
+
+      40% {
+        -ms-transform: rotate(78deg);
+        transform: rotate(78deg)
+      }
+
+      100% {
+        -ms-transform: rotate(40deg);
+        transform: rotate(40deg)
+      }
+    }
+
+    @-webkit-keyframes sway-6 {
+      0% {
+        -webkit-transform: rotate(65deg)
+      }
+
+      40% {
+        -webkit-transform: rotate(92deg)
+      }
+
+      100% {
+        -webkit-transform: rotate(58deg)
+      }
+    }
+
+    @keyframes sway-6 {
+      0% {
+        -ms-transform: rotate(65deg);
+        transform: rotate(65deg)
+      }
+
+      40% {
+        -ms-transform: rotate(92deg);
+        transform: rotate(92deg)
+      }
+
+      100% {
+        -ms-transform: rotate(58deg);
+        transform: rotate(58deg)
+      }
+    }
+
+    @-webkit-keyframes sway-7 {
+      0% {
+        -webkit-transform: rotate(72deg)
+      }
+
+      40% {
+        -webkit-transform: rotate(118deg)
+      }
+
+      100% {
+        -webkit-transform: rotate(68deg)
+      }
+    }
+
+    @keyframes sway-7 {
+      0% {
+        -ms-transform: rotate(72deg);
+        transform: rotate(72deg)
+      }
+
+      40% {
+        -ms-transform: rotate(118deg);
+        transform: rotate(118deg)
+      }
+
+      100% {
+        -ms-transform: rotate(68deg);
+        transform: rotate(68deg)
+      }
+    }
+
+    @-webkit-keyframes sway-8 {
+      0% {
+        -webkit-transform: rotate(94deg)
+      }
+
+      40% {
+        -webkit-transform: rotate(136deg)
+      }
+
+      100% {
+        -webkit-transform: rotate(82deg)
+      }
+    }
+
+    @keyframes sway-8 {
+      0% {
+        -ms-transform: rotate(94deg);
+        transform: rotate(94deg)
+      }
+
+      40% {
+        -ms-transform: rotate(136deg);
+        transform: rotate(136deg)
+      }
+
+      100% {
+        -ms-transform: rotate(82deg);
+        transform: rotate(82deg)
+      }
+    }
+
+    .sakura {
+      /* background: -webkit-linear-gradient(120deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9));
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9));*/
+      background: red;
+      pointer-events: none;
+      position: absolute
+    }
+
+    .sakura {
+      background: #674ea7;
+    }
+
+
+
+
+    /* ******************************** */
+
+    :root {
+      --width-logo: 359px;
+      --top-left-right-photo-width: 300px;
+    }
+
+    .top-right-decoration {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: var(--top-left-right-photo-width);
+    }
+
+    .top-left-decoration {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: var(--top-left-right-photo-width);
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+
+    .event {
+
+
+
+      position: absolute;
+      width: 100%;
+      
+      top: 100%;
+
+
+      
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+    }
+
+
+
+    .flower-p {
+      width: var(--width-logo);
+      /* margin: 11em auto; */
+      position: relative;
+      /* width: 100%; */
+      top: 46px;
+      left: 50%;
+      transform: translate(-50%, 10%);
+
+
+    }
+
+    .logo {
+      width: var(--width-logo);
+      position: absolute;
+      /* transform: translate(-50%, 0);
+      left: 50%; */
+
+    }
+
+    .tumzied,
+    .jui,
+    .ampersand {
       font-size: 5em;
       text-align: center;
-  }
-  
-  .tumzied {
-    position: absolute;
-    top: 120px;
-    left: 225px;
-  }
-  
-  .jui {
-    position: absolute;
-    top: 185px;
-    left: 335px;  
-  }
-  
-  .ampersand {
-    font-style: italic; 
-    position: absolute;
-    top: 160px;
-    left: 270px;
-  }
-  
-  date {
-     border-top: 1px solid #575557;
-     border-bottom: 1px solid #575557;
-    position: absolute;
-    top: 240px;
-    left: 260px
-  }
+    }
+
+    .tumzied {
+      position: absolute;
+      top: 47px;
+      left: 117px;
+    }
+
+    .jui {
+      position: absolute;
+      top: 102px;
+      left: 215px;
+    }
+
+    .ampersand {
+      font-style: italic;
+      position: absolute;
+      top: 78px;
+      left: 150px;
+    }
+
+    .date {
+      border-top: 1px solid #575557;
+      border-bottom: 1px solid #575557;
+      position: absolute;
+      top: 158px;
+      left: 140px;
+      display: none;
+
+    }
+
+    .playwrite-it-moderna-400 {
+      font-family: "Playwrite IT Moderna", cursive;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .event h2{
+      text-align: center;
+    }
+
+
+    .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 400px;
+            padding: 20px;
+            text-align: center;
+        }
+        .card h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+        .card .date-time {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .card .date-time div {
+            display: flex;
+            align-items: center;
+        }
+        .card .date-time div img {
+            margin-right: 10px;
+        }
+        .card p {
+            margin: 10px 0;
+        }
+        .card .map {
+            margin-top: 20px;
+        }
+        .card .map img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      :root {
+        --top-left-right-photo-width: 200px;
+      }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {}
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {}
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {}
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {}
   </style>
+
+</head>
+
+<body>
+
+  <audio autoplay loop >
+    <source src="leva-eternity-149473.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+
+
+  <body>
+    <img src="right.png" alt="image-top-right" class="top-right-decoration">
+    <img src="left.png" alt="image-top-left" class="top-left-decoration">
+    <div class="sakura-falling"></div>
+
+
+
+
+    <div class="f-c">
+
+
+      <div class="flower-p">
+        <img src="https://s.cdpn.io/7635/averyson-logo.gif" class="logo">
+        </img>
+        <div class="name">
+          <span class="tumzied">T</span>
+          <span class="ampersand">&</span>
+          <span class="jui">J</span>
+          <date class="date">13.07.2024</date>
+        </div>
+      </div>
+    </div>
+
+    <div class="event">
+      <h2 class="playwrite-it-moderna-400 " style="font-size: 3em;">Event</h2>
+      <div class="card">
+        <h2 class="playwrite-it-moderna-400">WEDDING</h2>
+        <div class="date-time">
+            <div>
+                <img src="calendar3.svg" alt="Calendar" width="24" height="24">
+                <span>13 July 2024</span>
+            </div>
+            <div>
+                <img src="clock.svg" alt="Clock" width="24" height="24">
+                <span>01:30 PM</span>
+            </div>
+        </div>
+        <p>At <strong>Bondhon Community Center
+          Opposite side of Bata Gate
+          Mymensingh Hwy Road, Tongi
+      </strong></p>
+       
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d667.634242368084!2d90.4010748691082!3d23.887442972297897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c4467f270fbd%3A0xc9c10a6f44254963!2sBondhon%20Community%20Center!5e0!3m2!1sen!2sbd!4v1720197127892!5m2!1sen!2sbd" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    </div>
+
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>
+    <script src="./js/script.js"></script>
+
+  </body>
+
+</html>
