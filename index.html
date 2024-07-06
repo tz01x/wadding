@@ -587,14 +587,32 @@
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {}
+
+
+    #playPauseBtn {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            padding: 10px;
+  
+            background-color: #0000003e;
+            font-size: 2em;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
   </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
 
 </head>
 
 <body>
 
-  <audio autoplay loop >
-    <source src="leva-eternity-149473.mp3" type="audio/mpeg">
+  <audio id="background-audio"  autoplay loop >
+    <source src="alex-productions-romantic-music-for-weddings-and-valentines-day-love(chosic.com).mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
 
@@ -622,7 +640,9 @@
         </div>
       </div>
     </div>
-
+    <button id="playPauseBtn" onclick="toggleAudio()">
+      <i id="volumeIcon" class="fas fa-volume-up"></i>
+    </button>
     <div class="event">
       <h2 class="playwrite-it-moderna-400 " style="font-size: 3em;">Event</h2>
       <div class="card">
@@ -653,6 +673,22 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
     <script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>
     <script src="./js/script.js"></script>
+
+    <script>
+      function toggleAudio() {
+            var audio = document.getElementById('background-audio');
+            var icon = document.getElementById('volumeIcon');
+            if (audio.paused) {
+                audio.play();
+                icon.classList.remove('fa-volume-mute');
+                icon.classList.add('fa-volume-up');
+            } else {
+                audio.pause();
+                icon.classList.remove('fa-volume-up');
+                icon.classList.add('fa-volume-mute');
+            }
+        }
+  </script>
 
   </body>
 
